@@ -1,0 +1,67 @@
+:root {
+  --wine-red: #c7375f;
+  --bright-red: #d42d2f;
+  --dark-green: #344d2f;
+  --light-green: #77a047;
+  --gold: #fac57d;
+  --snow: #f0f4f7;
+}
+
+*,
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: var(--wine-red);
+  height: 100vh;
+  font-family: 'Caveat', cursive;
+}
+
+.container {
+  margin: 2em;
+  display: grid;
+  justify-content: center;
+  grid-template-rows: 50px 400px 30px;
+  gap: 10px;
+}
+
+.card {
+  width: 300px;
+  height: 300px;
+  border-radius: 5px;
+  background: var(--snow);
+  font-size: 35px;
+  text-align: center;
+  padding: 0.5em;
+  /* position: relative; */
+  transform: translateY(40px);
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px,
+    rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+}
+
+button {
+  border: none;
+  background-color: var(--gold);
+  padding: 0.5em 1em;
+  border-radius: 5px;
+  margin: 0 auto;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+.card-input {
+  height: 50px;
+  display: grid;
+  justify-content: center;
+  gap: 5px;
+  margin: 5px;
+  margin-bottom: 20px;
+}
