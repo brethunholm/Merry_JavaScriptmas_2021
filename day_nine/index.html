@@ -1,0 +1,27 @@
+<html>
+    <head>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Mountains+of+Christmas:wght@700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="index.css">
+    </head>
+    <body>
+        <div class="container">
+           <div class="decoration-container" id="decoration-container">
+            <span id="house">🏡</span>
+           </div>
+           <h3 id="message">Flip Switch to Decorate!</h3>
+          
+          <div class="more-decorations" id="more-decoration-container">
+              <p> Add More Decorations!</p>
+              <span id="star" onClick=addStar()>🌟</span>
+              <span id="santa" onClick=addSanta()>🎅</span>
+              <span id="confetti" onClick=addConfetti()>🎉</span>
+          </div>
+            <input type="checkbox" class="decorator" id="decorator">
+            <label for="decorator"></label>
+            
+        </div>
+        <script src="index.js"></script>
+    </body>
+</html>
